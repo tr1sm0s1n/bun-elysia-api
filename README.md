@@ -1,19 +1,38 @@
-# Elysia with Bun runtime
+# Bun-Elysia-API
 
-## Getting Started
+Simple API demonstrating CRUD operations in TypeScript with Bun and Elysia.
 
-To get started with this template, simply paste this command into your terminal:
+## 🛠 Built With
+
+<div align="left">
+<a href="https://bun.sh/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/DEMYSTIF/DEMYSTIF/main/assets/icons/bun.svg" width="36" height="36" alt="Bun" /></a>
+<a href="https://elysiajs.com/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/DEMYSTIF/DEMYSTIF/main/assets/icons/elysia.svg" width="36" height="36" alt="Elysia" /></a>
+<a href="https://www.typescriptlang.org/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/DEMYSTIF/DEMYSTIF/main/assets/icons/typescript.svg" width="36" height="36" alt="TypeScript" /></a>
+</div>
+
+## ⚙️ Run Locally
+
+Clone the project
 
 ```bash
-bun create elysia ./elysia-example
+git clone https://github.com/DEMYSTIF/bun-elysia-api.git
+cd bun-elysia-api
 ```
 
-## Development
+Install Bun
 
-To start the development server run:
+```bash
+curl -fsSL https://bun.sh/install | bash
+```
+
+Install dependencies
+
+```bash
+bun install
+```
+
+Start the application
 
 ```bash
 bun run dev
 ```
-
-Open http://localhost:3000/ with your browser to see the result.
