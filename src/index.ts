@@ -1,4 +1,5 @@
 import { Elysia, t } from "elysia";
+import { swagger } from "@elysiajs/swagger";
 import { users } from "./users";
 
 const findOne = (id: string) => {
@@ -8,6 +9,16 @@ const findOne = (id: string) => {
 };
 
 const app = new Elysia()
+  .use(
+    swagger({
+      documentation: {
+        info: {
+          title: "Bun Elysia API Documentation",
+          version: "1.0.0",
+        },
+      },
+    })
+  )
   .get("/read", () => users)
   .get("/read/:id", ({ params: { id }, set }) => {
     let user = findOne(id);
