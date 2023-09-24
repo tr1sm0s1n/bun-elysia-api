@@ -36,3 +36,5 @@ Start the application
 ```bash
 bun run dev
 ```
+
+Open [browser](http://127.0.0.1:8080/swagger) for the API documentation
