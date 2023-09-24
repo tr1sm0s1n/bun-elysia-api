@@ -8,7 +8,7 @@ const findOne = (id: string) => {
   });
 };
 
-const app = new Elysia()
+export const app = new Elysia()
   .use(
     swagger({
       documentation: {
