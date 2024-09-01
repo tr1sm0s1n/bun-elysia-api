@@ -1,30 +1,30 @@
 export const users = [
   {
-    id: "p-01",
-    name: "Corliss",
+    id: 'p-01',
+    name: 'Corliss',
     age: 28,
-    origin: "Europa",
+    origin: 'Europa',
     admin: false,
   },
   {
-    id: "p-02",
-    name: "Jared",
+    id: 'p-02',
+    name: 'Jared',
     age: 45,
-    origin: "Earth",
+    origin: 'Earth',
     admin: true,
   },
   {
-    id: "p-03",
-    name: "Raphael",
+    id: 'p-03',
+    name: 'Raphael',
     age: 32,
-    origin: "Mars",
+    origin: 'Mars',
     admin: false,
   },
   {
-    id: "p-04",
-    name: "Zoe",
+    id: 'p-04',
+    name: 'Zoe',
     age: 24,
-    origin: "Enceladus",
+    origin: 'Enceladus',
     admin: false,
   },
-];
+]

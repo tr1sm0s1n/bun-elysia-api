@@ -1,82 +1,82 @@
-import { describe, expect, it } from "bun:test";
-import { app } from ".";
-import { users } from "./users";
+import { describe, expect, it } from 'bun:test'
+import { app } from '.'
+import { users } from './users'
 
 const testers = [
   {
-    id: "p-05",
-    name: "Walter",
+    id: 'p-05',
+    name: 'Walter',
     age: 56,
-    origin: "Earth",
+    origin: 'Earth',
     admin: false,
   },
   {
-    id: "p-05",
-    name: "Mavis",
+    id: 'p-05',
+    name: 'Mavis',
     age: 21,
-    origin: "Luna",
+    origin: 'Luna',
     admin: true,
   },
-];
+]
 
-describe("Elysia", () => {
-  it("read all success", async () => {
+describe('Elysia', () => {
+  it('read all success', async () => {
     const response = await app
-      .handle(new Request("http://localhost/read"))
-      .then((res) => res.json());
+      .handle(new Request('http://localhost/read'))
+      .then((res) => res.json())
 
-    expect(response).toEqual(users);
-  });
+    expect(response).toEqual(users)
+  })
 
-  it("read one success", async () => {
+  it('read one success', async () => {
     const response = await app
-      .handle(new Request("http://localhost/read/p-02"))
-      .then((res) => res.json());
+      .handle(new Request('http://localhost/read/p-02'))
+      .then((res) => res.json())
 
-    expect(response).toEqual(users[1]);
-  });
+    expect(response).toEqual(users[1])
+  })
 
-  it("create one success", async () => {
+  it('create one success', async () => {
     const response = await app
       .handle(
         new Request(`http://localhost/create`, {
-          method: "POST",
+          method: 'POST',
           headers: {
-            "Content-Type": "application/json",
+            'Content-Type': 'application/json',
           },
           body: JSON.stringify(testers[0]),
         })
       )
-      .then((res) => res.json());
+      .then((res) => res.json())
 
-    expect(response).toEqual(testers[0]);
-  });
+    expect(response).toEqual(testers[0])
+  })
 
-  it("update one success", async () => {
+  it('update one success', async () => {
     const response = await app
       .handle(
         new Request(`http://localhost/update`, {
-          method: "PUT",
+          method: 'PUT',
           headers: {
-            "Content-Type": "application/json",
+            'Content-Type': 'application/json',
           },
           body: JSON.stringify(testers[1]),
         })
       )
-      .then((res) => res.json());
+      .then((res) => res.json())
 
-    expect(response).toEqual(testers[1]);
-  });
+    expect(response).toEqual(testers[1])
+  })
 
-  it("delete one success", async () => {
+  it('delete one success', async () => {
     const response = await app
       .handle(
         new Request(`http://localhost/delete/p-05`, {
-          method: "DELETE",
+          method: 'DELETE',
         })
       )
-      .then((res) => res.json());
+      .then((res) => res.json())
 
-    expect(response).toEqual(testers[1]);
-  });
-});
+    expect(response).toEqual(testers[1])
+  })
+})
