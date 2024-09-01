@@ -4,9 +4,9 @@ Simple API demonstrating CRUD operations in TypeScript with Bun and Elysia.
 
 ## 🛠 Built With
 
-[![Bun](https://img.shields.io/badge/bun-dimgray?style=for-the-badge&logo=bun&logoColor=white)](https://bun.sh/)
-[![Elysia](https://img.shields.io/badge/elysia-dimgray?style=for-the-badge&logo=bun&logoColor=white)](https://elysiajs.com/)
-[![TypeScript](https://img.shields.io/badge/typescript-royalblue?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![Bun Badge](https://img.shields.io/badge/Bun-000?logo=bun&logoColor=fff&style=for-the-badge)](https://bun.sh/)
+[![Elysia Badge](https://img.shields.io/badge/Elysia-000?logo=bun&logoColor=fff&style=for-the-badge)](https://elysiajs.com/)
+[![TypeScript Badge](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=fff&style=for-the-badge)](https://www.typescriptlang.org/)
 
 ## ⚙️ Run Locally
 
@@ -29,10 +29,16 @@ Install dependencies
 bun install
 ```
 
+Test the application
+
+```bash
+bun test
+```
+
 Start the application
 
 ```bash
-bun run dev
+bun dev
 ```
 
-Open [browser](http://127.0.0.1:8080/swagger) for the API documentation
+Open [browser](http://127.0.0.1:8080/swagger) for the API documentation.
