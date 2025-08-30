@@ -1,6 +1,8 @@
 {
   "name": "bun-elysia-api",
   "version": "1.0.50",
+  "module": "index.ts",
+  "type": "module",
   "scripts": {
     "test": "bun test",
     "dev": "bun run --watch src/index.ts",
@@ -11,8 +13,10 @@
     "elysia": "latest"
   },
   "devDependencies": {
-    "bun-types": "latest",
-    "prettier": "3.3.3"
+    "prettier": "latest",
+    "@types/bun": "latest"
   },
-  "module": "src/index.js"
+  "peerDependencies": {
+    "typescript": "^5"
+  }
 }
